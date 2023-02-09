@@ -6,6 +6,36 @@
         </title>
     </head>
     <body>
+        <sections>
        <header> <h1>Contact Me</h1></header>
+       <p> For any questions or queries please feel free to get in touch via the fill-in form below</p>
+    </sections>
+    <sections>
+        <form>
+            <fieldset>
+              <legend>Personal details</legend>      
+              <label for="name">Name</label>
+              <input id="name" type="text">
+              <br>
+              <label for="email">Email</label>
+              <input id="email" name="email">
+            </fieldset>
+            <fieldset>
+              <legend>Reason For Contacting</legend>
+              <select name="reason for contacting">
+                <option hidden disabled selected value> -- Select An Option -- </option>
+                <option value="generalquery">General Query</option>
+                <option value="collaborations">Collaborate</option>
+                <option value="help">Help</option>                
+              </select>
+              <legend>Your Message</legend>
+              <label for="notes"></label>
+              <textarea id="notes"></textarea>
+              <br>
+            </fieldset>
+          
+            <input type="submit" name="submit" value="Submit">
+          </form>
+    </sections>
     </body>
 </html>
