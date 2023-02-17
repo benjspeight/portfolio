@@ -2,16 +2,18 @@
 <html lang="en">
 <head> 
         <link rel="stylesheet" type="text/css" href="style.css">
-        <style> @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');</style>
+        <style> @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        </style>
         <title> Benj Speight </title>
-        <div class="sidebar">
-            <div id="navbar">
-                <a href="pages/contact.html" target="_blank">Contact Me</a>
-                <a href="pages/projects.html" target="_blank">Projects</a>
-            </div> 
-        </div>
+        
 </head>
 <body>
+    <div class="sidebar">
+        <div id="navbar">
+            <a id="contact" href="pages/contact.html" target="_blank">Contact Me</a>
+            <a id="projects" href="pages/projects.html" target="_blank">Projects</a>
+        </div> 
+    </div>
     <div class="header">
         <header>  
             <h1 id="title">Benj Speight</h1>
@@ -39,39 +41,58 @@
     <p>The ability to build and create applications is something that highly motivates me & is something I'm deeply passionate. </p>
     <br>
     <figure>
-                <img src="images/drumming.jpg" alt="Benj Speight playing the drums" width= 400px height:auto>
-                <figcaption>Playing drums with my band.</figcaption>
+        <div class="container">
+            <img src="images/drumming.jpg" alt="Benj Speight playing the drums" class="image">
+            <div class="middle">
+            <div class="text">Playing the drums.</div>
+           </div>
+           </div>
+           <br>
+           <div class="container">
+            <img src="images/cowboys.jpg" alt="Dallas Cowboys game at the AT&T Stadium" width=auto height=400px class="image">
+            <div class="middle">
+            <div class="text">Watching the Dallas Cowboys.</div>
+           </div>
+           </div>
     </figure>
-    <figure>
-                <img src="images/cowboys.jpg" alt="Dallas Cowboys game at the AT&T Stadium" width= 400px height:auto>
-                <figcaption>Watching the Dallas Cowboys play in Texas.</figcaption>
-    </figure>
-
 </section>
     <section>
         <br>
-<h4>Qualities</h4>
-<ol>
-    <li>Creative</li>
-    <li>Friendly</li>
-    <li>Driven</li>
-</ol></section>
-<section>
-<h4>Hobbies & Interests</h4>
-<ul>
-    <li>Playing drums</li>
-    <li>Working out</li>
-    <li>Dallas Cowboys</li>
-</ul></section>
-
+        <table class="center">
+            <thead>
+                <tr>
+                    <th>Qualities</th>
+                    <th>Hobbies & Interests</th>
+                </tr>
+                <tbody>
+                <tr>
+                    <td>Creative</td>
+                    <td>Playing Drums</td>
+                </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Reliability</td>
+                        <td>Playing Guitar</td>
+                    </tr>
+                    </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Communication Skills</td>
+                        <td> Wathcing American Football</td>
+                    </tr>
+                </tfoot>
+            </table>
 <div >
     <h3 id="title">My Socials</h3>
-    <div id="socials">
-    <p> Follow me on &nbsp<a href="https://www.linkedin.com/in/benj-speight-a69405260/" target="_blank" class="socialmedia"> LinkedIn</a>!</p>
-    <p> Follow me on &nbsp<a href="https://www.instagram.com/benjdeadthrone" target="_blank" class="socialmedia"> Instagram</a>!</p>
-    </div>
+   <a> <p> Follow me on &nbsp<a href="https://www.linkedin.com/in/benj-speight-a69405260/" target="_blank" class="socialmedia">
+        <img src="images/linkedin.png" height="25" width="auto"></p></a>
+   <a> <p> Follow me on &nbsp<a href="https://www.instagram.com/benjdeadthrone" target="_blank" class="socialmedia">
+        <img src="images/insta.png" height="25" width="auto"></p> </a>
 </div>
 </div>
+<br>
+
 </main>
     <div class="footer">
     <footer><p>2023</p>
