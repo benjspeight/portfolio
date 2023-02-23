@@ -7,34 +7,12 @@ body {
         "main"
         "main"
         "footer";
+
 }
 
 
-.header {
-grid-row: 2;
-}
 
-.sidebar {
-    grid-row: 1;
-}
 
-.main {
-    grid-row: 3 / 5;
-}
-
-.footer {
-    grid-row: 6;
-}
-
-.body{
-    display: grid;
-  justify-content: center
-}
-
-#navbar {
-    overflow: hidden;
-
-  }  
   #navbar a {
     float:right;
     display: block;
@@ -42,13 +20,11 @@ grid-row: 2;
     text-align: center;
     padding: 14px;
     text-decoration: none;
-  }
-
+}
 
 #title {
     display:flex;
     justify-content: center;
-    
 }
 
 h1{
@@ -60,33 +36,59 @@ h2{
 }
 
 hr {
-    border-color:#272932
+    border-color:#000000
 }
 
 h3{
     font-size: 30px;
 }
 
-figure {
-
-
-display: inline-block;
-
+p {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin:1px;
 }
 
+
+.column {
+    display: inline-block;
+    width: 33%;
+    height: 400px;
+    border-radius: 25px;
+    text-align: center;
+    outline: #000000;
+    outline-style: solid;
+    outline-width: 2px;
+    overflow: hidden    ;
+    box-shadow: 0px 5px black;
+
+  }
+  ul.myUL {
+    display: inline-block;
+    text-align: left;
+    font-size: 30px;
+  }
+  
+
+ 
+
+
+/*this is for the table so may need to delete */
 
 
 
 /* this is for an image with hover over text*/
 
-  .container {
+.container {
     display: block;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     width: 30%;
-  }
-        .image {
+}
+
+.image {
         border-radius: 50%;
         opacity: 1;
         display: block;
@@ -96,9 +98,9 @@ display: inline-block;
         height: auto;
         transition: .5s ease;
         backface-visibility: hidden;
-  }
-  
-        .middle {
+}
+
+.middle {
             transition: .5s ease;
             opacity: 0;
             position: absolute;
@@ -108,15 +110,12 @@ display: inline-block;
             -ms-transform: translate(-50%, -50%);
             text-align: center;
         }
-        
                 .container:hover .image {
                     opacity: 0.3;
                 }
-                
                 .container:hover .middle {
                     opacity: 1;
                 }
-                
                 .text {
                     color: white;
                     font-size: 36px;
@@ -124,45 +123,15 @@ display: inline-block;
                 }
 
 
-p {
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    margin:1px;
-}
 
-  
+/*code for the background*/
 
-    
-.socialmedia:visited {
-    color: blue;
-}
-
-.socialmedia:active
-{
-    color:red;
-}
-
-
-
-
-a[class="socialmedia"] {
-    background-color: salmon;
-}
-
-
-html, body {
-    width: 100%;
-    height:100%;
-  }
-  
   body {
-      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #23d52f);
       background-size: 1000% 1000%;
       animation: gradient 15s ease infinite;
       background-repeat: no-repeat;
   }
-  
   @keyframes gradient {
       0% {
           background-position: 0% 50%;
@@ -174,3 +143,63 @@ html, body {
           background-position: 0% 50%;
       }
   }
+
+footer p {
+    font-size: 20px;
+}
+
+
+  @media screen and (prefers-color-scheme: dark) {
+    body {
+        background: linear-gradient(-45deg, #000000, #3b3c36, #36454f, #000000);
+        background-size: 1000% 1000%;
+        animation: gradient 15s ease infinite;
+        background-repeat: no-repeat;
+        color: white;
+    
+    }
+    #navbar a {
+        float:right;
+        display: block;
+        color: #ffffff;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;  
+    }
+    
+    .socialmedia{
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+    }
+
+    hr {
+        border-color:#ffffff
+    }
+
+    .column {
+        display: inline-block;
+        width: 33%;
+        height: 400px;
+        border-radius: 25px;
+        text-align: center;
+        outline: white;
+        outline-style: solid;
+        outline-width: 2px;
+        overflow: hidden    ;
+        box-shadow: 0px 5px white;
+  }
+  
+  }
+
+@media screen and (min-width: 768px) {
+    .box {
+        height: 500px;
+        font-size: 100px;
+    }
+}
+
+@media screen and (min-width: 414px) {
+    #navbar {
+        position: relative;
+    }
+}
